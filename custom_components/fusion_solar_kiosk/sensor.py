@@ -33,7 +33,7 @@ _LOGGER = logging.getLogger(__name__)
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     async def async_update_data():
         """Fetch data"""
-        api = FusionSolarKioksApi('https://eu5.fusionsolar.huawei.com')
+        api = FusionSolarKioksApi('https://intl.fusionsolar.huawei.com')
         data = {}
         for kiosk in config[CONF_KIOSKS]:
             data[kiosk['id']] = {
