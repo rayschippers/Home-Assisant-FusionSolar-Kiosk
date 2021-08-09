@@ -7,7 +7,7 @@ import voluptuous as vol
 from . import FusionSolarKioskEnergyEntity, FusionSolarKioskPowerEntity
 
 from datetime import timedelta
-from homeassistant.components.sensor import PLATFORM_SCHEMA
+from homeassistant.components.sensor import PLATFORM_SCHEMA, STATE_CLASS_MEASUREMENT, SensorEntity
 from homeassistant.const import (
     CONF_ID,
     CONF_NAME,
