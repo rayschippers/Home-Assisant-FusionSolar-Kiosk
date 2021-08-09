@@ -48,7 +48,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
         _LOGGER,
         name='FusionSolarKiosk',
         update_method=async_update_data,
-        update_interval=timedelta(seconds=300),
+        update_interval=timedelta(seconds=60),
     )
 
     # Fetch initial data so we have data when entities subscribe
